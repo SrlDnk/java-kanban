@@ -1,3 +1,8 @@
+package tracker;
+
+import tracker.controllers.TaskManager;
+import tracker.model.*;
+
 public class Main {
 
     public static void main(String[] args) {

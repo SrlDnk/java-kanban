@@ -1,3 +1,6 @@
+package tracker.controllers;
+
+import tracker.model.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
