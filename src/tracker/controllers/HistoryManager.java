@@ -1,4 +1,4 @@
-package tracker;
+package tracker.controllers;
 
 import tracker.model.Task;
 import java.util.List;
