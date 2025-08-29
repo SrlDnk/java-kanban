@@ -1,4 +1,4 @@
-package tracker.controllers;
+package tracker;
 
 import tracker.model.*;
 import java.util.List;

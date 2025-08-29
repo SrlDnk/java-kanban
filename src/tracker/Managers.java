@@ -1,4 +1,4 @@
-package tracker.controllers;
+package tracker;
 
 public class Managers {
     public static TaskManager getDefault() {

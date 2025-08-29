@@ -1,8 +1,10 @@
+package tracker.controllers;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import tracker.controllers.HistoryManager;
-import tracker.controllers.Managers;
-import tracker.controllers.TaskManager;
+import tracker.HistoryManager;
+import tracker.Managers;
+import tracker.TaskManager;
 import tracker.model.*;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
