@@ -4,7 +4,7 @@ import tracker.model.Task;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InMemoryHistoryManeger implements HistoryManager {
+public class InMemoryHistoryManager implements HistoryManager {
 
     private final List<Task> history = new ArrayList<>();
 

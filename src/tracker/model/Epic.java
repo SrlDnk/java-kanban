@@ -1,38 +1,41 @@
 package tracker.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Epic extends Task {
-    private ArrayList<Integer> subtaskIds = new ArrayList<>();
+    private List<Integer> subtasksIds = new ArrayList<>();
 
     public Epic(String title, String description) {
         super(title, description);
     }
 
-    public ArrayList<Integer> getSubtasksIds() {
-        return subtaskIds;
+    public List<Integer> getSubtasksIds() {
+        return subtasksIds;
     }
 
-    public void addSubtaskId(int subtaskid) {
-        subtaskIds.add(subtaskid);
+    public void addSubtaskId(int id) {
+        if (!subtasksIds.contains(id)) {
+            subtasksIds.add(id);
+        }
     }
 
-    public void removeSubtaskId(int subtaskId) {
-        subtaskIds.remove((Integer) subtaskId);
+    public void removeSubtaskId(int id) {
+        subtasksIds.remove((Integer) id);
     }
 
     public void clearSubtasks() {
-        subtaskIds.clear();
+        subtasksIds.clear();
     }
 
     @Override
     public String toString() {
-        return "tracker.model.Epic{" +
+        return "Epic{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", status=" + status +
-                ", subtaskIds=" + subtaskIds +
+                ", subtasksIds=" + subtasksIds +
                 '}';
     }
 }

@@ -1,12 +1,14 @@
 package tracker;
 
+import tracker.controllers.Managers;
+import tracker.controllers.InMemoryTaskManager;
 import tracker.controllers.TaskManager;
 import tracker.model.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        TaskManager taskManager = new TaskManager();
+        TaskManager taskManager = Managers.getDefault();
 
         //Создание задач, эпиков и подзадач
         Task task1 = new Task("Покупка машины", "Выбрать варианты и осмотреть");
@@ -49,5 +51,6 @@ public class Main {
         System.out.println(taskManager.getAllTasks());
         System.out.println(taskManager.getAllEpics());
         System.out.println(taskManager.getAllSubtasks());
+        System.out.println(taskManager.getHistory());
     }
 }
