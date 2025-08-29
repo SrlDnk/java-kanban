@@ -1,12 +1,15 @@
-package tracker.controllers;
+package test;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import tracker.controllers.HistoryManager;
+import tracker.controllers.Managers;
+import tracker.controllers.TaskManager;
 import tracker.model.*;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
-class InMemoryHistoryManegerTest {
+class InMemoryHistoryManagerTest {
 
     private TaskManager taskManager;
 
